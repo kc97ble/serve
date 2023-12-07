@@ -1,5 +1,8 @@
+#!/usr/bin/env node
+
 const Http = require("http");
 const Micro = require("micro");
+const Path = require("path");
 const minimist = require("minimist");
 
 const { getHandler } = require("./lib/getHandler");
@@ -39,6 +42,8 @@ function getParams() {
 }
 
 const params = getParams();
-const requestListener = Micro.serve(getHandler({ root: params.root }));
+const absolutePath = Path.resolve(params.root);
+const requestListener = Micro.serve(getHandler({ root: absolutePath }));
 const server = new Http.Server(requestListener);
 server.listen(params.port);
+console.log(`Serving ${absolutePath} on port ${params.port}...`);
