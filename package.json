@@ -2,13 +2,19 @@
   "name": "serve",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bin.js"
   },
   "author": "Kien Nguyen <kc97ble@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "eslint": "^8.55.0"
+    "eslint": "^8.55.0",
+    "fast-url-parser": "^1.1.3",
+    "micro": "^10.0.1",
+    "minimatch": "^9.0.3",
+    "minimist": "^1.2.8",
+    "path-is-inside": "^1.0.2",
+    "serve-handler": "^6.1.5",
+    "zod": "^3.22.4"
   }
 }
