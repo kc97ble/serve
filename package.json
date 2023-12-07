@@ -1,0 +1,14 @@
+{
+  "name": "serve",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kien Nguyen <kc97ble@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "eslint": "^8.55.0"
+  }
+}
